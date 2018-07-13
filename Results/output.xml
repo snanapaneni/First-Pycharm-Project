@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180713 14:33:36.857" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="C:\Users\snanapaneni\PycharmProjects\Siri test project\Tests\PeoplePageTests.robot" id="s1" name="PeoplePageTests">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://gowling-qa.ecentricarts.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180713 14:33:37.103" level="INFO">Opening browser 'chrome' to base url 'https://gowling-qa.ecentricarts.com/'.</msg>
+<status status="PASS" endtime="20180713 14:33:44.044" starttime="20180713 14:33:37.103"></status>
+</kw>
+<test id="s1-t1" name="Access People Page and find the list from canada location">
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180713 14:33:45.272" starttime="20180713 14:33:44.046"></status>
+</kw>
+<kw name="Navigate to People page from Home Page" library="PeoplePageKeyword">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@id="form"]/div[4]/header/div[4]/div/div/div/nav/ul/li[1]/a</arg>
+</arguments>
+<status status="PASS" endtime="20180713 14:33:45.370" starttime="20180713 14:33:45.273"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="form"]/div[4]/header/div[4]/div/div/div/nav/ul/li[1]/a</arg>
+</arguments>
+<msg timestamp="20180713 14:33:45.370" level="INFO">Clicking element '//*[@id="form"]/div[4]/header/div[4]/div/div/div/nav/ul/li[1]/a'.</msg>
+<status status="PASS" endtime="20180713 14:33:46.085" starttime="20180713 14:33:45.370"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@id="content"]/section[1]/div/div/div/h1</arg>
+</arguments>
+<status status="PASS" endtime="20180713 14:33:46.121" starttime="20180713 14:33:46.085"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="p_lt_ctl07_pageplaceholder_p_lt_ctl02_GWLG_Search_Filters_Location_filterList"]/li[2]/label/span</arg>
+</arguments>
+<msg timestamp="20180713 14:33:46.121" level="INFO">Clicking element '//*[@id="p_lt_ctl07_pageplaceholder_p_lt_ctl02_GWLG_Search_Filters_Location_filterList"]/li[2]/label/span'.</msg>
+<status status="PASS" endtime="20180713 14:33:46.247" starttime="20180713 14:33:46.121"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@id="filterSort"]</arg>
+<arg>20</arg>
+</arguments>
+<status status="PASS" endtime="20180713 14:33:47.429" starttime="20180713 14:33:46.247"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="filterSort"]</arg>
+</arguments>
+<msg timestamp="20180713 14:33:47.440" level="INFO">Current page contains element '//*[@id="filterSort"]'.</msg>
+<status status="PASS" endtime="20180713 14:33:47.440" starttime="20180713 14:33:47.429"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="searchResults"]/ul[1]/li[1]/article/div/div</arg>
+</arguments>
+<msg timestamp="20180713 14:33:47.463" level="INFO">Current page contains element '//*[@id="searchResults"]/ul[1]/li[1]/article/div/div'.</msg>
+<status status="PASS" endtime="20180713 14:33:47.463" starttime="20180713 14:33:47.440"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="searchResults"]/ul[1]/li[2]/article/div/div/p[1]/a/strong</arg>
+</arguments>
+<assign>
+<var>${scott}</var>
+</assign>
+<msg timestamp="20180713 14:33:47.506" level="INFO">${scott} = Neil S. Abbott</msg>
+<status status="PASS" endtime="20180713 14:33:47.506" starttime="20180713 14:33:47.464"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${scott}</arg>
+</arguments>
+<status status="PASS" endtime="20180713 14:33:47.508" starttime="20180713 14:33:47.506"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${scott}</arg>
+<arg>Neil S. Abbott</arg>
+</arguments>
+<status status="PASS" endtime="20180713 14:33:47.509" starttime="20180713 14:33:47.508"></status>
+</kw>
+<status status="PASS" endtime="20180713 14:33:47.509" starttime="20180713 14:33:45.273"></status>
+</kw>
+<status status="PASS" endtime="20180713 14:33:47.510" critical="yes" starttime="20180713 14:33:44.045"></status>
+</test>
+<doc>Suite description</doc>
+<status status="PASS" endtime="20180713 14:33:47.514" starttime="20180713 14:33:36.862"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="PeoplePageTests" pass="1">PeoplePageTests</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20180713 14:33:37.094" level="WARN">Imported resource file 'C:\Users\snanapaneni\PycharmProjects\Siri test project\Resources\Xpaths\PeoplePageXpath.robot' is empty.</msg>
+</errors>
+</robot>

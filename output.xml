@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180713 13:55:44.826" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="C:\Users\snanapaneni\PycharmProjects\Siri test project\Tests" id="s1" name="Tests">
+<suite source="C:\Users\snanapaneni\PycharmProjects\Siri test project\Tests\PeoplePageTests.robot" id="s1-s1" name="PeoplePageTests">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://gowling-qa.ecentricarts.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180713 13:55:45.097" level="INFO">Opening browser 'chrome' to base url 'https://gowling-qa.ecentricarts.com/'.</msg>
+<status status="PASS" endtime="20180713 13:56:03.896" starttime="20180713 13:55:45.097"></status>
+</kw>
+<test id="s1-s1-t1" name="Access People Page and find the list from canada location">
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180713 13:56:05.126" starttime="20180713 13:56:03.897"></status>
+</kw>
+<kw name="Navigate to People page from Home Page" library="PeoplePageKeyword">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@id="form"]/div[4]/header/div[4]/div/div/div/nav/ul/li[1]/a</arg>
+</arguments>
+<status status="PASS" endtime="20180713 13:56:05.188" starttime="20180713 13:56:05.126"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="form"]/div[4]/header/div[4]/div/div/div/nav/ul/li[1]/a</arg>
+</arguments>
+<msg timestamp="20180713 13:56:05.188" level="INFO">Clicking element '//*[@id="form"]/div[4]/header/div[4]/div/div/div/nav/ul/li[1]/a'.</msg>
+<status status="PASS" endtime="20180713 13:56:09.609" starttime="20180713 13:56:05.188"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@id="content"]/section[1]/div/div/div/h1</arg>
+</arguments>
+<status status="PASS" endtime="20180713 13:56:09.648" starttime="20180713 13:56:09.609"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="p_lt_ctl07_pageplaceholder_p_lt_ctl02_GWLG_Search_Filters_Location_filterList"]/li[2]/label/span</arg>
+</arguments>
+<msg timestamp="20180713 13:56:09.648" level="INFO">Clicking element '//*[@id="p_lt_ctl07_pageplaceholder_p_lt_ctl02_GWLG_Search_Filters_Location_filterList"]/li[2]/label/span'.</msg>
+<status status="PASS" endtime="20180713 13:56:09.765" starttime="20180713 13:56:09.648"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@id="filterSort"]</arg>
+</arguments>
+<status status="PASS" endtime="20180713 13:56:11.526" starttime="20180713 13:56:09.765"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="filterSort"]</arg>
+</arguments>
+<msg timestamp="20180713 13:56:11.540" level="INFO">Current page contains element '//*[@id="filterSort"]'.</msg>
+<status status="PASS" endtime="20180713 13:56:11.541" starttime="20180713 13:56:11.526"></status>
+</kw>
+<status status="PASS" endtime="20180713 13:56:11.541" starttime="20180713 13:56:05.126"></status>
+</kw>
+<status status="PASS" endtime="20180713 13:56:11.541" critical="yes" starttime="20180713 13:56:03.896"></status>
+</test>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180713 13:56:14.602" starttime="20180713 13:56:11.542"></status>
+</kw>
+<doc>Suite description</doc>
+<status status="PASS" endtime="20180713 13:56:14.602" starttime="20180713 13:55:44.861"></status>
+</suite>
+<status status="PASS" endtime="20180713 13:56:14.603" starttime="20180713 13:55:44.830"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Tests" pass="1">Tests</stat>
+<stat fail="0" id="s1-s1" name="PeoplePageTests" pass="1">Tests.PeoplePageTests</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20180713 13:55:45.096" level="WARN">Imported resource file 'C:\Users\snanapaneni\PycharmProjects\Siri test project\Resources\Xpaths\PeoplePageXpath.robot' is empty.</msg>
+</errors>
+</robot>
