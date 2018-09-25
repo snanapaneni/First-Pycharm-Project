@@ -14,7 +14,7 @@ ${Resource_card_Xpath}  //*[@id="searchResults"]/ul[1]/li[1]/article
 ${Resource_type_Xpath}  //*[@id="searchResults"]/ul[1]/li[1]/article/div/div[2]/span[1]
 
 
-# ${Resource_card_content_Xpath}  //*[@id="searchResults"]/ul[1]/li[1]/article/div/div[1]
+${Resource_card_content_Xpath}  //*[@id="searchResults"]/ul[1]/li[1]/article/div/div[1]
 ${Resource_card_title_Xpath}    //*[@id="searchResults"]/ul[1]/li[1]/article/div/div[1]/a/span
 ${Resource_type_tag_Xpath}      //*[@id="p_lt_ctl07_pageplaceholder_p_lt_ctl01_ResourceDetail_lnkResourceType"]
 ${Resource_detail_page_title_Xpath}   //*[@id="content"]/section[1]/section/div/div/div/h1
