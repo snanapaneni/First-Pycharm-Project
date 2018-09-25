@@ -2,7 +2,6 @@
 
 Documentation   Home Page Xpath
 
-Documentation   Home Page Xpath
 
 *** Variables ***
 
